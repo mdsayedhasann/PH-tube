@@ -6,44 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tube</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"rel="stylesheet" type="text/css"/>
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-      <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Homepage</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>About</a></li>
-                    </ul>
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-end">
+            <button class="bg-[#FF1F3D]">Blog</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-4">
+        <div class="card card-compact bg-base-100">
+          <!-- Main Image Start -->
+          <div class="relative">
+            <figure><img src="./images/b.avif" alt="" /></figure>
+          </div>
+          <!-- Main Image End -->
+
+          <!-- Time Start -->
+          <div class="bg-[#171717] p-1 absolute top-[35%] right-2 rounded-sm">
+            <p class="text-white text-xs">3hrs 56 min ago</p>
+          </div>
+          <!-- Time End -->
+
+          <div class="card-body">
+            <div class="card card-side bg-base-100">
+              <!-- Author Image Start  -->
+              <figure>
+                <img src="./images/i.avif" class="w-12 rounded-full" alt="" />
+              </figure>
+              <!-- Author Image Emd  -->
+
+              <div class="card-body">
+                <!-- Tube Title Start -->
+                <h2 class="card-title text-[#171717] text-base font-bold my-1">
+                  Building a Winning UX Strategy Using the Kano Model
+                </h2>
+                <!-- Tube Title End  -->
+
+                <!-- Author Name & Image Start -->
+                <div class="flex justify-normal items-center">
+                  <div><p class="my-0 leading-3 mr-2">Awlad Hossain</p></div>
+                  <div>
+                    <img src="./images/verified.png" class="w-[30px]" alt="" />
                   </div>
                 </div>
-                <div class="navbar-center">
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-end">
-                  <button class="bg-[#FF1F3D]">Blog</button>
-                </div>
+                <!-- Author Name & Image End -->
+
+                <!-- View Start -->
+                <p>91K views</p>
+                <!-- View End -->
               </div>
-        </nav>
-      </header>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-      <main>
+    <footer></footer>
 
-      </main>
-
-      <footer>
-
-
-      </footer>
-
-      <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
