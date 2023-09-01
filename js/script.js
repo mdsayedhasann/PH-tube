@@ -39,8 +39,8 @@ const handleCards = async(postID) => {
           <!-- Main Image End -->
 
           <!-- Time Start -->
-          <div class="bg-[#171717] p-1 absolute top-[35%] right-2 rounded-sm">
-            <p class="text-white text-xs">${card.others.posted_date}</p>
+          <div class="bg-[#171717] p-1 absolute top-[45%] right-2 rounded-sm ${card.others.posted_date === '' ? "hidden" : ''}">
+            <p class="text-white text-xs">    ${Math.floor(card.others?.posted_date / 3660)}hrs  ${Math.floor(card.others?.posted_date % 3000 / 60)}min ago</p>
           </div>
           <!-- Time End -->
 
@@ -62,7 +62,7 @@ const handleCards = async(postID) => {
                 <!-- Author Name & Image Start -->
                 <div class="flex justify-normal items-center">
                   <div><p class="my-0 leading-3 mr-2">${card.authors[0].profile_name}</p></div>
-                  <div>
+                  <div id="isVerified" class='${card.authors[0].verified==true? '' : "hidden"}'>
                     <img src="./images/verified.png" class="w-[30px]" alt="" />
                   </div>
                 </div>
