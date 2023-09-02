@@ -10,13 +10,16 @@ const handleTabs = async() => {
     data.data.forEach((item) => {
         const div = document.createElement('div');
         div.innerHTML = `
-        <a onclick="handleCards('${item.category_id}')" class="tab bg-[#E5E6E6] text-[#252525] text-[16px] mx-2 my-2">${item.category} </a>
+        <a onclick="handleCards('${item.category_id}')" class="tab bg-[#E5E6E6] text-[#252525] text-[16px] mx-2 my-2 ">${item.category} </a>
         `
     tab.appendChild(div) 
     })
      
 }
 // Tabs Section End 
+
+
+// Blogs Start 
 
 const handleCards = async(postID) => {
     const response = await fetch(`https://openapi.programming-hero.com/api/videos/category/${postID}`)
